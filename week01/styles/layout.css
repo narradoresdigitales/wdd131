@@ -19,18 +19,19 @@ header {
     padding-bottom: 20px;
 }
 .main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .main-content {
     background-color: lightgray;
-    flex: 2;
+    grid-column: span 2;
 }
 .main h1 {
     padding: 15px 0 275px 15px;
 }
 .aside-content {
     background-color: ghostwhite;
-    flex: 1;
+    grid-column: span 1;
 }
 .footer {
     background-color: gray;
