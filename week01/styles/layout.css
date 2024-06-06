@@ -2,12 +2,12 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px ;
     margin: 0;
-    padding: 0;
+    
 }
 #header-content {
     background-color: gray;
     color: white;
-    padding-bottom: 20px;
+    padding: 35px 0px 75px 15px;
 }
 header {
     background-color: black;
@@ -16,17 +16,18 @@ header {
 .nav-bar {
     display: flex;
     justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .main {
     display: flex;
-
-    
 }
 .main-content {
     background-color: lightgray;
     flex: 2;
-    
-    
+}
+.main h1 {
+    padding: 15px 0 275px 15px;
 }
 .aside-content {
     background-color: ghostwhite;
@@ -34,4 +35,9 @@ header {
 }
 .footer {
     background-color: gray;
+    color: white;
+    padding-top: 15px ;
+    padding-bottom:  200px;
+    text-align: center;
+    
 }
