@@ -17,6 +17,7 @@ header {
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: white;
 }
 .main {
     display: grid;
@@ -26,7 +27,7 @@ header {
     background-color: lightgray;
     grid-column: span 2;
 }
-.main h1 {
+.main p {
     padding: 15px 0 275px 15px;
 }
 .aside-content {
