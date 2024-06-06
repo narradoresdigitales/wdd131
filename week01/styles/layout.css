@@ -3,6 +3,9 @@
     font-size: 20px ;
     margin: 0;
 }
+a {
+    color: inherit;
+}
 #header-content {
     background-color: gray;
     color: white;
@@ -18,6 +21,10 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
+}
+.nav-bar a:visited {
+    color: inherit;
+
 }
 .main {
     display: grid;
