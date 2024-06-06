@@ -5,29 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
     <meta name="author" content="author-name">
-    
     <title>WDD 131 - Dynamic Web Fundamentals - Marcus Palmer</title>
     <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
         <div class="heading">
-            <h1>WDD 131 - Dynamic Web Fundamentals - Marcus 'Sil' Palmer</h1>
+            <p id="course">  WDD 131 - Dynamic Web Fundamentals - </p>
+            <p id="student">Marcus 'Sil' Palmer</p>
         </div>
         <div class="nav-bar">
             <nav>
-                <a href="LinkedIn">LinkedIn</a>
-                <a href="I-Learn">I-Learn</a>
-                <a href="Scripture">Scripture</a>
-                <a href="Final Project">Final Project</a>
+                <ul>
+                    <li><a href="LinkedIn">LinkedIn</a></li>
+                    <li><a href="I-Learn">I-Learn</a></li>
+                    <li><a href="Scripture">Scripture</a></li>
+                    <li><a href="Final Project">Final Project</a></li>
+                </ul>
             </nav>
         </div>
     </header>
     
-    <main>
+    <main class="main">
+        <!--section one-->
+        <section class="card" id="about-me">
+            <div class="about-me">
+                <h2>About Me</h2>
+            </div>
+            <div id="text-photo">
+                <p id="intro">My name is Marcus, and I go by Marcus or 'Sil'.
+                    I was born in Arizona and raised in Texas. My family and I 
+                    liv in San Antonio, Texas. I am currently working as a
+                    government contractor.
+                </p>
+                <img id="profile-jpg" src="./images/profile.jpg" alt="Profile Picture">
+            </div>
+            <div class="city-info">
+                <h2 id="san-antonio">San Antonio, Texas</h2>
+                <hr>
+            </div>
+            <div class="texas-info"> 
+                <figure>
+                    <img id="texas-flag" src="./images/texas-flag.png" alt="Texas State Flag">
+                    <figcaption>Texas State Flag</figcaption>
+                </figure>
+                <p id="state-info">
+                San Antonio (SAN an-TOH-nee-oh; Spanish for "Saint Anthony"), 
+                officially the City of San Antonio, is a city in the U.S. state of Texas and 
+                the most populous city in Greater San Antonio, the third-largest metropolitan 
+                area in Texas and the 24th-largest metropolitan area in the United States 
+                at 2.6 million people in the 2020 US census. 
+
+                It is the most populous city in and the county seat of Bexar County. 
+                The city is the seventh-most populous in the United States, the second-largest 
+                in the Southern United States,and the second-most populous in Texas 
+                after Houston.
+                </p>
+            </section>
+            </div> 
+        <!--section two-->
+        <section class="card" id="web-dev-resources">
+            <div class="web-dev-resources">
+            <h2>Web Dev Resources</h2>
+            </div>
+            <ul>
+                <li><a href="w3-schools">W3 Schools</a></li>
+                <li><a href="coursera">Coursera</a></li>
+                <li><a href="you-tube">YouTube</a></li>
+                <li><a href="linked-in">LinkedIn</a></li>
+            </ul>
+        </section>
     </main>
     
     <footer>
+        <p id="author"> &copy; 2024 Marcus 'Sil' Palmer</p>
+        <p id="modification-date">Last Modification: date/time</p>
     </footer>
 </body>
 </html>
