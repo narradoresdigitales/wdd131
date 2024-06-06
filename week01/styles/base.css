@@ -1,10 +1,20 @@
-
-
+* {
+    margin: 0;
+}
+a {
+    color: inherit;
+}
 .heading h1  {
     background-color: blue;
-    color: red;
-}
-.nav-bar {
-    background-color: black;
     color: white;
+    text-align: center;
+}
+.nav-bar nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+
 }
