@@ -70,6 +70,7 @@ footer {
     text-align: center;
     grid-row: span 2;
     grid-column: span 2;
+    
 }
 .about-me h2{
     background-color: gray;
@@ -80,14 +81,13 @@ footer {
     
 }
 #profile-jpg {
-    width: 50%;
+    width: 100%;
     max-width: 100%;
     border-radius: 8px;
 }
-#text-photo {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-    grid-column: span 2;
+.text-photo {
+    display: grid;
+    grid-template-columns: 1fr auto; 
     align-items: center;
     padding: 20px;
 }
@@ -95,7 +95,7 @@ footer {
     text-align: center;
 }
 .texas-info {
-    display: grid;
+    display: flex;
     /* grid-template-columns: 1fr 1fr ; */
     padding: 20px;
     gap: 25px;
@@ -103,18 +103,19 @@ footer {
 .card li {
     margin-top: 15px;
 }
-.card ul {
+/* .card ul {
     margin-top: 225px;
-}
+    
+} */
 .card {
     border: 1px solid black;
     
-}
+
 #web-dev-resources h2 {
     background-color: gray;
     text-align: center;
     grid-column: span 1;
-
+    grid-row: span 2;
 }
 
 
