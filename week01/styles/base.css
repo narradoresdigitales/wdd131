@@ -109,7 +109,7 @@ footer {
 } */
 .card {
     border: 1px solid black;
-    
+} 
 
 #web-dev-resources h2 {
     background-color: gray;
@@ -117,5 +117,8 @@ footer {
     grid-column: span 1;
     grid-row: span 2;
 }
-
+.resource-list {
+    margin-top: 150px;
+    margin-bottom: 250px;
+}
 
