@@ -96,6 +96,7 @@ nav ul li {
     border-top-right-radius: 10px;
 }
 
+
 .text-photo {
     display: flex;
     grid-template-columns: 1fr auto;
@@ -103,9 +104,10 @@ nav ul li {
     align-items: center;
 }
 
-.text-photo img {
+#profile-jpg {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 35px;
+
 }
 
 /* FOOTER  */
@@ -161,29 +163,29 @@ footer {
 .card {
     border: 1px solid black;   
     border-radius: 10px;
+    justify-content: normal;
 } 
 
-#web-dev-resources h1 {
-    background-color: gray;
-    text-align: center;
-    /* grid-column: span 1; */
-    /* grid-row: span 1; */
+
+.resource-list {
+    margin-top: 150px;
 }
 
-.resource-list ul {
-    list-style: none;
-    padding: 0;
-    
+#resource-links {
+    margin: 50px;
+    list-style-type: none;
 }
-.resource-list ul li {
-    margin: 75px 0;
+
+
+#resource-links li {
+    margin: 0;
+    padding: 10px 0;
 }
 .resource-list ul li a {
     
     color: black;
     padding: 50px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+
 }
 
 
