@@ -1,10 +1,25 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Roboto Mono";
 }
 a {
     color: inherit;
 }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgb(0,0,0, 0.1);
+}
+header,
+main {
+    margin: 0 auto;
+}
+
+
 .heading {
     display: flex;
     justify-content: center;
@@ -35,6 +50,9 @@ nav a {
     color: white;
     font-family: "Roboto Mono";
     text-decoration: none;
+}
+nav a:hover {
+    text-decoration:overline;
 }
 .nav-bar {
     background-color: black;
