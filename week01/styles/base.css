@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: "Roboto Mono";
 }
 a {
     color: inherit;
@@ -32,7 +33,7 @@ nav a {
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Roboto Mono";
     text-decoration: none;
 }
 .nav-bar {
@@ -72,7 +73,7 @@ footer {
     grid-column: span 2;
     
 }
-.about-me h2{
+.about-me h1{
     background-color: gray;
 }
 #intro {
