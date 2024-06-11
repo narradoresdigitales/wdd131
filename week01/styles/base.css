@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: "Roboto Mono";
 }
 a {
@@ -48,14 +48,13 @@ nav {
     display: flex;
     justify-content: center;
     max-width: 800%;
-    /* background-color: black; */
+
 }
 nav a {
     background-color: black;
     display: block;
     justify-content: space-around;
-    /* padding-top: 20px;
-    padding-bottom: 20px; */
+
     color: white;
     font-family: "Roboto Mono";
     text-decoration: none;
@@ -72,7 +71,7 @@ nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    /* background-color: black; */
+    
 }
 nav ul li {
     flex: 1 1 100%;
@@ -91,8 +90,10 @@ nav ul li {
     text-align: center;
     background-color: gray;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .text-photo {
@@ -112,7 +113,7 @@ nav ul li {
 footer {
     background-color: gray;
     text-align: center;
-    margin-top: 25px;
+    padding: 20px 0;
 }
 
 /* CARD 1 CSS */
@@ -146,12 +147,7 @@ footer {
     max-width: 100%;
     border-radius: 8px;
 }
-/* .text-photo {
-    display: grid;
-    grid-template-columns: 1fr auto; 
-    align-items: center;
-    padding: 20px;
-} */
+
 #san-antonio {
     text-align: center;
 }
@@ -160,44 +156,35 @@ footer {
     padding: 20px;
     gap: 25px;
 }
-.card li {
-    margin-top: 15px;
-}
+
 
 .card {
     border: 1px solid black;   
+    border-radius: 10px;
 } 
 
 #web-dev-resources h1 {
     background-color: gray;
     text-align: center;
-    grid-column: span 1;
-    grid-row: span 2;
+    /* grid-column: span 1; */
+    /* grid-row: span 1; */
 }
 
-.resource-list {
-    display: flex;
-    flex-direction: column;
-}
 .resource-list ul {
     list-style: none;
     padding: 0;
     
 }
 .resource-list ul li {
-    margin: 10px 0;
+    margin: 75px 0;
 }
 .resource-list ul li a {
-    text-decoration: none;
+    
     color: black;
-    padding: 10px;
-    /* display: block; */
-    background-color: #f0f0f0;
+    padding: 50px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-.resource-list ul li a:hover {
-    background-color: #e0e0e0;
-}
+
 
