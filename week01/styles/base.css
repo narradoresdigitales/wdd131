@@ -9,13 +9,24 @@ a {
 }
 header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center;
     padding: 20px;
-    border: 1px solid rgb(0,0,0, 0.1);
+    border: 1px solid rgb(0,0,0, 0.1); */
+    /* background-color: gray; */
 }
-header h1 {
+.header-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
     background-color: gray;
+}
+
+header h1 {
+    padding: 15px;
+    margin: 0;
 }
 header,
 main {
@@ -43,6 +54,15 @@ main {
 #course {
     margin-right: -5px;
 }
+.nav-links {
+    background-color: black;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background-color: black; */
+}
 nav a {
     background-color: black;
     display: block;
@@ -63,10 +83,16 @@ nav a:hover {
 nav ul {
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    /* background-color: black; */
 }
 nav ul li {
-    flex: 1 1 100%
+    flex: 1 1 100%;
+    margin: 0 15px;
 }
+
 footer {
     background-color: gray;
     text-align: center;
