@@ -14,11 +14,13 @@ header {
     padding: 20px;
     border: 1px solid rgb(0,0,0, 0.1);
 }
+header h1 {
+    background-color: gray;
+}
 header,
 main {
     margin: 0 auto;
 }
-
 
 .heading {
     display: flex;
@@ -44,15 +46,16 @@ main {
 nav a {
     background-color: black;
     display: block;
-    justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* justify-content: space-around; */
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
     color: white;
     font-family: "Roboto Mono";
     text-decoration: none;
 }
 nav a:hover {
     text-decoration:overline;
+    border: 1px solid #fff;
 }
 .nav-bar {
     background-color: black;
