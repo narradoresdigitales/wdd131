@@ -84,6 +84,7 @@ nav ul li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: whitesmoke;
 }
 
 .card h1 {
@@ -106,7 +107,7 @@ nav ul li {
 
 #profile-jpg {
     max-width: 100%;
-    border-radius: 35px;
+    /* border-radius: 35px; */
 
 }
 
@@ -140,14 +141,14 @@ footer {
 }
 
 #intro {
-    background-color: white;
+    
     padding: 10px;
     
 }
 #profile-jpg {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 8px;
+    width: 50%;
+    max-width: 50%;
+    /* border-radius: 8px; */
 }
 
 #san-antonio {
