@@ -30,7 +30,7 @@ header h1 {
 }
 #student {
     font-size: 30px;
-    color: yellow;
+    color: navy;
 }
 
 /* NAVIGATION CSS  */
@@ -101,14 +101,11 @@ nav ul li {
 .text-photo {
     display: flex;
     grid-template-columns: 1fr auto;
-    gap: 20px;
     align-items: center;
 }
 
 #profile-jpg {
     max-width: 100%;
-    /* border-radius: 35px; */
-
 }
 
 /* FOOTER  */
@@ -126,7 +123,7 @@ footer {
     font-size: 20px;
 }
 #modification-date {
-    color: yellow;
+    color: navy;
 }
 
 .main {
@@ -148,7 +145,9 @@ footer {
 #profile-jpg {
     width: 50%;
     max-width: 50%;
-    /* border-radius: 8px; */
+    border-radius: 75px;
+    padding: 15px;
+    
 }
 
 #san-antonio {
@@ -188,6 +187,10 @@ footer {
     padding: 50px;
 
 }
-
+#custom-line {
+    width: 75%;
+    margin: 0 auto;
+    border-top: 2px solid #000;
+}
 
 
