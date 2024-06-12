@@ -184,7 +184,8 @@ footer {
 .resource-list ul li a {
     
     color: black;
-    padding: 50px;
+    /* padding: 15px; */
+    white-space: nowrap;
 
 }
 #custom-line {
