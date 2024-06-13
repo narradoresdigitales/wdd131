@@ -148,7 +148,7 @@ footer {
 }
 #profile-jpg {
     width: 50%;
-    max-width: 50%;
+   height: auto;
     border-radius: 75px;
     padding: 15px;
     
