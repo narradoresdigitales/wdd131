@@ -15,14 +15,14 @@ header {
     background-color: black;
     color: white;
 }
-.nav-bar {
+nav {
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
 }
-.nav-bar a:visited {
+nav a:visited {
     color: inherit;
 }
 .main {
