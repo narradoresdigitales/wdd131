@@ -6,10 +6,12 @@
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    background-color: #f0f4f8;
+    color: #333333;
 }   
 
 a {
-    color: inherit;
+    color: #008080;
 }
 
 /* HEADER CSS  */
@@ -19,6 +21,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f0f4f8;;
     
 }
 .header-title {
@@ -26,16 +29,18 @@ header {
     justify-content: center;
     width: 100%;
     margin-bottom: 20px;
-    background-color: gray;
+    background-color: #008080;
+
 }
 header h1 {
     margin: 0;
     font-weight: 100;
-    padding: 15px
+    padding: 15px;
+    color: #ffffff
 }
 #student {
     font-size: 35px;
-    color: black;
+    color:#ffffff
 }
 
 /* NAVIGATION CSS  */
@@ -59,15 +64,14 @@ nav a {
     background-color: black;
     display: block;
     justify-content: space-around;
-
-    color: white;
+    color: #ffffff;
     font-family: "Roboto Mono";
     text-decoration: none;
     white-space: nowrap;
 }
 nav a:hover {
     text-decoration:overline;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
 }
 
 nav ul {
@@ -85,7 +89,7 @@ nav ul li {
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid 333333;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,8 +98,8 @@ nav ul li {
 
 .card h1  {
     text-align: center;
-    background-color: gray;
-    color: black;
+    background-color: 008080;
+    color: ffffff;
     margin-bottom: 10px;
     padding: 10px;
     border-top-left-radius: 10px;
@@ -103,10 +107,11 @@ nav ul li {
 }
 
 h2 {
-    background-color: gray;
+    background-color: black;
     text-align: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    color: #ffffff
 } 
 
 .text-photo {
@@ -125,9 +130,29 @@ h2 {
 /* FOOTER  */
 
 footer {
-    background-color: gray;
+    background-color: #008080;
     text-align: center;
     padding: 20px 0;
+    color: #ffffff
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+footer img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+footer .footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* CARD 1 CSS */
@@ -137,8 +162,9 @@ footer {
     font-size: 20px;
 }
 #modification-date {
-    color: black;
+    color: #333333;
 }
+
 
 .main {
     display: grid;
@@ -175,7 +201,7 @@ footer {
 
 
 .card {
-    border: 1px solid black;   
+    border: 1px solid #333333;   
     border-radius: 10px;
     justify-content: normal;
 } 
@@ -197,7 +223,7 @@ footer {
 }
 .resource-list ul li a {
     
-    color: black;
+    color: #008080;
     padding: 15px;
     white-space: nowrap;
 
@@ -205,10 +231,11 @@ footer {
 #custom-line {
     width: 75%;
     margin: 0 auto;
-    border-top: 2px solid #000;
+    border-top: 2px solid #333333;
     
 }
 h3 {
     margin-bottom: 10px;
+    color: #333333
 }
 
