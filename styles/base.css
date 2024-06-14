@@ -93,7 +93,7 @@ nav ul li {
     background-color: whitesmoke;
 }
 
-.card h1 {
+.card h1  {
     text-align: center;
     background-color: gray;
     color: black;
@@ -103,6 +103,10 @@ nav ul li {
     border-top-right-radius: 10px;
 }
 
+h2 {
+    background-color: gray;
+    text-align: center;
+} 
 
 .text-photo {
     display: flex;
