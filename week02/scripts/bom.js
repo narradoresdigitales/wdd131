@@ -30,12 +30,12 @@ button.addEventListener('click', function() {
 
         // Append the li element to the list
         list.append(li)
-            
+        
         deleteButton.addEventListener('click', function () {
             list.removeChild(li);
             input.focus();
     });
-            
+        
         
         
 
