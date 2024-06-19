@@ -20,6 +20,7 @@ header {
     padding: 20px;
 }
 
+
 #menu {
     display: block;
     font-size: 2rem;
@@ -28,8 +29,8 @@ header {
     padding: .5rem .75rem;
     background-color: #eee;
     color: #000;
-    
     cursor: pointer;
+    
 }
 
 #menu::before {
@@ -59,11 +60,12 @@ header {
     background-color: black;
 }
 
+
 .show li {
     display: block;
 }
 
-.hamburger.show::before {
+#menu.show::before {
     content: 'X';
 }
 
@@ -80,8 +82,6 @@ h2 {
     margin: 15px;
 
 }
-
-
 
 figure img {
     width: 100%;
