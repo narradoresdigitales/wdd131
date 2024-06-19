@@ -55,7 +55,15 @@ h2 {
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
 
 }
 
+
+
+figure img {
+    width: 100%;
+    height: auto;
+}
