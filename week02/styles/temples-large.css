@@ -1,4 +1,21 @@
+
+
+#topic {
+    color: blue;
+}
+
+h2 {
+    color: orange;
+}
+
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: green;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
 }
