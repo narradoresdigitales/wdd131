@@ -120,11 +120,10 @@ h2 {
 
 .gallery {
     
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
-    gap: 10px;
-    padding: 20px;
+    
     
 
 }
@@ -134,5 +133,10 @@ h2 {
     height: auto;
     display: block;
     padding: 15px;
+    
+}
+
+figcaption {
+    text-align: center;
 }
 
