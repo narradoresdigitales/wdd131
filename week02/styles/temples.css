@@ -6,6 +6,7 @@
 
 h1 {
 	font-size: 1.5rem;
+    
 } 
 
 span {
@@ -52,18 +53,21 @@ nav a:hover {
     border-bottom: 3px solid white;
 }
 
-
-
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+     gap: 10px;
+    
 
 }
 
 main img {
     width: 100%;
-    
+    padding: 15px;    
+}
+
+figcaption {
+    text-align: left;
 }
 
 
