@@ -5,9 +5,12 @@
 }
 
 h1 {
-
 	font-size: 1.5rem;
 } 
+
+span {
+    font-size: 1.7rem;
+}
 
 nav {
     display: none
@@ -19,7 +22,6 @@ nav {
 
 body {
     font-family: Roboto sans-serif;
-
 }
 
 #title {
@@ -32,12 +34,10 @@ header {
     background-color: #4b0082;
     color: white;
     padding: 1rem;
-    
-
 }
 
-/* small navigation */
-#menu {
+
+/* #menu {
     font-size: 1.5rem;
 	border: 0;
 	background: none;
@@ -54,7 +54,7 @@ header {
 
 #menu.open::before {
 	content: "❎";
-}
+} */
 
 
 nav a {
@@ -129,4 +129,6 @@ h2 {
 figcaption {
     text-align: center;
 }
+
+
 
