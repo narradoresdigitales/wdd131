@@ -98,10 +98,11 @@ main img {
 
 
 footer {
-    background-color: #325d79;
+    background-color: #4b0082;
     text-align: center;
     color: #fff;
     padding: 1rem;
+    margin-top: 1rem;
     width: 100%;
 }
 
