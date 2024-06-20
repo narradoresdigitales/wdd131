@@ -1,29 +1,14 @@
 
-// const hamButton = document.querySelector('#menu');
-// const navigation = document.querySelector('.nav-links');
+const burger = document.querySelector('#burgerMenu')
+const closeButton = document.querySelector('#closeButton')
+const nav = document.querySelector('#menu')
 
-// hamButton.addEventListener('click', () => {
-//     navigation.classList.toggle('open');
-//     hamButton.classList.toggle('open');
+burger.addEventListener('click', () => {
+    nav.classList.toggle('open')
+    closeButton.classList.toggle('show')
+})
 
-// });
-
-
-// const hamButton = document.querySelector('#menu');
-// const navigation = document.querySelector('.navigation');
-
-// hamButton.addEventListener('click', () => {
-// 	navigation.classlist.toggle('open');
-// 	hamButton.classList.toggle('open');
-// }); 
-
-// another try 
-
-document.addEventListener('DOMContentLoaded', () => {
-    const hamButton = document.querySelector('#menu');
-    const navigation = document.querySelector('.navigation');
-
-    hamButton.addEventListener('click', () => {
-        navigation.classList.toggle('open');
-    });
-});
+closeButton.addEventListener('click', () => {
+    nav.classList.toggle('open')
+    closeButton.classList.toggle('show')
+})

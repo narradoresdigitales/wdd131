@@ -1,32 +1,15 @@
-@media screen and (min-width: 500px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (min-width: 700px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media only screen and (min-width: 40em) {
-    .nav-links {
+@media screen and (min-width: 640px) {
+    nav {
         display: flex;
-    }
-    .nav-links li {
-        display: block;
-        flex: 1 1 100%;
-    }
+        flex-direction: row;
+}
 
-    .nav-links a {
-        text-align: center;
-    }
-
-    #menu {
+    .burgerMenu {
         display: none;
+    }
+
+    main .container {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     }
 
 }

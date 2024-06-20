@@ -13,23 +13,22 @@
 </head>
 <body>
     <header> 
-        <h1 id="title">Temple Album</h1>
-            <button id="menu"></button>
-                <nav class="navigation">
-                    <a href="#">Home</a></li>
-                    <a href="#">Old</a></li>
-                    <a href="#">New</a></li>
-                    <a href="#">Large</a></li>
-                    <a href="#">Small</a></li>
+        <h1>Temple Album</h1>
+        <img id="burgerMenu" class="burgerMenu" src="images/burger-menu.svg" alt="">
+        <span id="closeButton" class="closeButton">x</span>
+            <nav class="navigation">
+                <a href="">Home</a></li>
+                <a href="">Old</a></li>
+                <a href="">New</a></li>
+                <a href="">Large</a></li>
+                <a href="">Small</a></li>
             </nav>
     </header>
-    
-
     </main>
     <!-- Row1 temple-images -->
         <h2>Home</h2>
             
-            <div class="gallery">
+            <div class="container">
         
             <figure>
                 <img id="montevideo" src="images/montevideo.jpg" alt="Montevideo, Uruguay Temple. The Church of Jesus Christ of Latter-day Saints">  
@@ -81,7 +80,8 @@
     
     <main>
     <footer>
-
+        <p>©<span id="currentYear"></span> Marcus 'Sil' Palmer</p>
+        <p id="lastModified"></p>
     </footer>
     <script src="scripts/temples.js" defer></script>
 </body>
