@@ -33,7 +33,7 @@ header {
     color: white;
     padding: 1rem;
     
-   
+
 }
 
 /* small navigation */
@@ -77,7 +77,6 @@ main {
 }
 
 main .container {
-    
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -86,7 +85,7 @@ main .container {
 
 main img {
     width: 100%;
-       
+
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
