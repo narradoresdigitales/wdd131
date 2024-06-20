@@ -70,13 +70,13 @@ nav a:hover {
     border-bottom: 3px solid #f26627;
 }
 
-main {
+/* main {
     max-width: 1000px;
     margin: 1rem auto;
     padding: 1rem;
-}
+} */
 
-main .container {
+.container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -85,8 +85,11 @@ main .container {
 
 main img {
     width: 100%;
-
+    
+    
 }
+
+
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 
@@ -122,9 +125,6 @@ footer {
 h2 {
     text-align: center;
 }
-
-
-
 
 figcaption {
     text-align: center;
