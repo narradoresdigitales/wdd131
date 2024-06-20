@@ -16,6 +16,8 @@ nav {
     display: none
 }
 
+/* Style the <span> to keep from displaying on small viewport */
+
 .closeButton {
     display: none;
 }
@@ -37,26 +39,6 @@ header {
 }
 
 
-/* #menu {
-    font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
-    position: absolute;
-	top: 1rem;
-	right: 1rem;
-}
-    
-
-#menu::before {
-	content: "☰";
-}
-
-#menu.open::before {
-	content: "❎";
-} */
-
-
 nav a {
     padding: 2px .6rem;
     text-decoration: none;
@@ -67,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-    border-bottom: 3px solid #f26627;
+    border-bottom: 3px solid white;
 }
 
 main {
@@ -113,11 +95,14 @@ main img {
     z-index: 9;display: block;
 }
 
+
+
 footer {
     background-color: #325d79;
     text-align: center;
     color: #fff;
     padding: 1rem;
+    width: 100%;
 }
 
 h2 {
