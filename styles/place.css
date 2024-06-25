@@ -24,7 +24,7 @@ h1 {
 
 .data {
     text-align: center;
-    border: solid black;
+    /* border: solid black; */
     margin-top: 15px;
     margin-left: 125px;
     margin-right: 125px;
@@ -90,7 +90,7 @@ td {
 
 .weather {
     
-    border: solid black;
+    /* border: solid black; */
     margin-top: 15px;
     margin-left: 100px;
     margin-right: 100px;
