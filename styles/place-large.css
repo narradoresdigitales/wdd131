@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .yerba-mate {
+        width: 100%;
+        display: block;
+        max-width: 100%;
+
+    }
+
+    .data-container {
+        grid-column: 1 / span 2;
+        grid-row: span 3;
+    }
+
+    .weather-container {
+        grid-column: 3;
+        grid-row: 2 / span 2
+    }
+}
