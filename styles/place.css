@@ -16,20 +16,38 @@ h2 {
     text-align: center;
 }
 
-header {
-    background-color: aqua;
+header, body {
+    background-color: #b2ffff ;
 }
 
+
+
 .header-border {
-    background-color: white;
-    padding: 10px;
-    border-bottom: solid;
+    border-top: solid yellow;
+}
+
+.image-border {
+    margin-top: -4px;
+    border-top: solid yellow;
 }
 
 .yerba-mate {
     width: 100%;
 }
 
+/* .image-border {
+    background-color: white;
+    border-top: solid yellow;
+} */
+
 .table {
     font-size: 10px;
+}
+
+footer {
+    background-color: yellow;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
 }
