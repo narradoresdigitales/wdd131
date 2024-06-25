@@ -13,16 +13,21 @@
 <body>
     <header>
         <h1>Argentina</h1>
-        <div></div>
+        
     </header>
+    <div class="header-border"></div>
     <main>
-        <img src="images/yerba-mate-small.webp" alt="yerba mate set">
+        <picture>
+            <source srcset="images/yerba-mate-large" media="min-width: 1000px">
+            <source srcset="images/yerba-mate-medium" media="min-width:500px ">
+            <img class="yerba-mate"  src="images/yerba-mate-small.webp" alt="yerba mate set">
+        </picture>
         <div></div>
 
         <h2>Data</h2>
         
         <div>
-            <table>
+            <table class="table">
             <tbody>
                 <tr>
                     <td>Area:</td>
