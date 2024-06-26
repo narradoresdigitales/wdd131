@@ -5,37 +5,34 @@
 }
 
 .title-div {
-    margin: 0;
-    text-align: center;
-    
-}
+    background-color: #b2ffff;
+    }
 
 h1 {
+    margin: 0;
+    text-align: center;
     color: black;
     font-size: 25px;
     text-align: center;
-    padding: 25px;
-    /* border: solid black; */
+    padding-top: 5px;
     border-radius: 5%;
+    background-color: white;
+    margin-top: 25px;
     
-    
-
 }
 
 .data {
     text-align: center;
-    /* border: solid black; */
     margin-top: 15px;
     margin-left: 125px;
     margin-right: 125px;
     background-color: yellow;
     border-radius: 15px;
     
-    
 }
 
 header, body {
-    background-color: #b2ffff ;
+    background-color: #b2ffff;
 }
 
 body {
@@ -47,12 +44,13 @@ body {
 
 
 .header-border {
-    border-top: solid yellow;
+    border-top: solid #b2ffff;
+    padding-bottom: 20px;
 }
 
-.image-border {
+.image-border-bottom {
     margin-top: -4px;
-    border-top: solid yellow;
+    border-top: solid black;
     border-bottom-left-radius: 30%;
     border-top-left-radius: 30%;
 }
@@ -60,6 +58,12 @@ body {
 .yerba-mate {
     width: 100%;
 }
+
+.image-border-top {
+    border-bottom: solid black;
+}
+
+
 
 .data-container, .weather-container {
     width: 100%;
@@ -87,7 +91,6 @@ td {
 
 .weather {
     
-    /* border: solid black; */
     margin-top: 15px;
     margin-left: 100px;
     margin-right: 100px;
