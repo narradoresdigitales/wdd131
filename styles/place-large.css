@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     /* main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -21,12 +21,27 @@
         grid-column: 2/4;
         grid-row: 1/4 */
     /* } */
+    
+    h1 {
+        background-color: red;
+    }
+    
+    /* main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(3, 1fr);
+    } */
 
 
-    .data, .weather {
-        margin-left: 275px;
-        margin-right: 275px;
+    .data-container {
+        border: solid black;
+        
     }
 
+    .weather-container {
+        border: solid black;
+    
+    
+    }
     
 }
