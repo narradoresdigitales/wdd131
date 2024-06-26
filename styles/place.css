@@ -49,20 +49,20 @@ body {
     padding-bottom: 22px;
 }
 
-.image-border-bottom {
+/* .image-border-bottom {
     margin-top: -4px;
     border-top: solid black;
     border-bottom-left-radius: 30%;
     border-top-left-radius: 30%;
-}
+} */
 
 .yerba-mate {
     width: 100%;
 }
 
-.image-border-top {
+/* .image-border-top {
     border-bottom: solid black;
-}
+} */
 
 
 .data-container, .weather-container {
@@ -100,7 +100,9 @@ td {
 }
 
 .cloudy-svg {
-    margin-bottom: -20px;
+    margin-left: 125px;
+    margin-bottom: 15px;
+    
 }
 
 footer {
