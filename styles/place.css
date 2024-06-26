@@ -49,20 +49,10 @@ body {
     padding-bottom: 22px;
 }
 
-/* .image-border-bottom {
-    margin-top: -4px;
-    border-top: solid black;
-    border-bottom-left-radius: 30%;
-    border-top-left-radius: 30%;
-} */
 
 .yerba-mate {
     width: 100%;
 }
-
-/* .image-border-top {
-    border-bottom: solid black;
-} */
 
 
 .data-container, .weather-container {
@@ -97,6 +87,7 @@ td {
     background-color: yellow;
     border-radius: 15px;
     border: solid black;
+    
 }
 
 .cloudy-svg {
@@ -107,9 +98,26 @@ td {
 
 footer {
     border-top: solid black;
-    background-color: yellow;
-    margin-top: 18px;
+    border-bottom: solid black;
+    background-color: b2ffff;
     padding: 10px;
     font-size:14px;
     text-align: center;
+}
+
+.footer-top, .footer-bottom {
+    background-color: white;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.footer-top {
+    padding-top: 12px;
+    margin-top: 12px;
+    
+}
+
+.footer-bottom {
+    padding-bottom: 11px;
+    margin-bottom: 11px;
 }
