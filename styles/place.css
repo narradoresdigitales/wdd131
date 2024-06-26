@@ -4,17 +4,14 @@
     box-sizing: border-box;
 }
 
-.title-div {
-    background-color: #b2ffff;
-    }
-
 h1 {
     margin: 0;
     text-align: center;
     color: black;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 5%;
     background-color: white;
     margin-top: 25px;
@@ -28,6 +25,7 @@ h1 {
     margin-right: 125px;
     background-color: yellow;
     border-radius: 15px;
+    border: solid black;
     
 }
 
@@ -35,17 +33,19 @@ header, body {
     background-color: #b2ffff;
 }
 
+
 body {
     font-family: Roboto ;
     text-align: center;
     margin: 0;
     padding: 0;
+    
 }
 
 
 .header-border {
     border-top: solid #b2ffff;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
 }
 
 .image-border-bottom {
@@ -64,7 +64,6 @@ body {
 }
 
 
-
 .data-container, .weather-container {
     width: 100%;
     display: flex;
@@ -77,7 +76,7 @@ body {
     padding-top: 10px;
     font-size: 14px;
     text-align: center;
-    margin-left: 0 auto;
+    margin-left: 0 ;
     
 }
 
@@ -96,7 +95,7 @@ td {
     margin-right: 100px;
     background-color: yellow;
     border-radius: 15px;
-
+    border: solid black;
 }
 
 .cloudy-svg {
