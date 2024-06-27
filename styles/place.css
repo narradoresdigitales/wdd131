@@ -144,3 +144,7 @@ footer {
     padding-bottom: 11px;
     margin-bottom: 11px;
 }
+
+footer::first-line {
+    background-color: yellow;
+}
