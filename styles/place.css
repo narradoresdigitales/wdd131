@@ -91,8 +91,7 @@ td {
 .cloudy-svg {
     margin-left: 125px;
     margin-bottom: 15px;
-    align-content: center;
-    
+    align-items: center;
 }
 
 footer {

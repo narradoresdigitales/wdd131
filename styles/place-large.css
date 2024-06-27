@@ -24,8 +24,9 @@
 
     .data {
         border-radius: 0px;
-        margin-left: -45px;
-        padding-top: 10px;
+        margin-top: 10px;
+        margin-left: -25px;
+        padding-top: 5px;
         padding-bottom: 10px;
         padding-right: 45px;
     }
@@ -48,9 +49,10 @@
     .weather {
             
         border-radius: 0px;
-        margin-left: -65px;
+        margin-left: -15px;
+        padding-left: 10px;
         padding-right: 55px;
-        margin-right: 15px;
+        margin-right: 35px;
         padding-top: 10px;
         padding-bottom: 10px;
         
@@ -73,7 +75,7 @@
         grid-row: 2;
         margin-top: -50px;
         margin-left: 45px;
-        padding-left: 10px;
+        padding-left: 35px;
             
     }
 
