@@ -45,6 +45,10 @@ main {
     
 }
 
+div:hover {
+    background-color:  #b2ffff;
+}
+
 
 .header-border {
     border-top: solid #b2ffff;
@@ -61,8 +65,8 @@ main {
     width: 100%;
     display: grid;
     align-content: center; 
-    
 }
+
 
 .table {
 
@@ -93,9 +97,9 @@ td {
 
 .cloudy-svg {
     margin-left: 42%;
-    
-
 }
+
+
 
 footer {
     border-top: solid black;

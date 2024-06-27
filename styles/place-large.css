@@ -1,8 +1,4 @@
 @media screen and (min-width: 768px) {
-
-    
-
-
     main {
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;  
@@ -20,6 +16,9 @@
         display: none;
     }
 
+    div:hover {
+        background-color: white;
+    }
 
 
     .data {
@@ -79,7 +78,6 @@
         margin-top: -50px;
         margin-left: 45px;
         padding-left: 35px;
-            
     }
 
 }
