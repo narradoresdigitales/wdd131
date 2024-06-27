@@ -27,7 +27,7 @@ h1 {
     margin-right: 125px;
     background-color: yellow;
     border-radius: 15px;
-    border: solid black;
+    /* border: solid black; */
     
     
 }
@@ -84,14 +84,14 @@ td {
     margin-right: 100px;
     background-color: yellow;
     border-radius: 15px;
-    border: solid black;
+    /* border: solid black; */
     
 }
 
 .cloudy-svg {
-    margin-left: 125px;
-    margin-bottom: 15px;
-    align-items: center;
+    margin-left: 42%;
+    /* margin-bottom: 15px; */
+
 }
 
 footer {

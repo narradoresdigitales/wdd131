@@ -7,13 +7,13 @@
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;  
         grid-template-rows: 1fr;
-        background-image: url("images/yerba-mate-large.webp");
-        background-image: url("images/yerba-mate.png"); /* backup image */
+        background-image: url("../images/yerba-mate-large.webp");
+        background-image: url("../images/yerba-mate.png"); /* backup image */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-color: white;
-                
+        background-color: black;
+        background-blend-mode:luminosity;
     }
 
     .yerba-mate {
@@ -29,6 +29,7 @@
         padding-top: 5px;
         padding-bottom: 10px;
         padding-right: 45px;
+        border: solid
     }
 
 
@@ -43,6 +44,7 @@
         padding-right: 15px;
         background-color: #b2ffff;
     
+    
                 
     }
 
@@ -55,6 +57,7 @@
         margin-right: 35px;
         padding-top: 10px;
         padding-bottom: 10px;
+        border: solid
         
     }
 
