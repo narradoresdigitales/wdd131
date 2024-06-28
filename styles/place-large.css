@@ -86,3 +86,13 @@
 
 
 }
+
+@media screen and (min-width: 1440px) {
+    
+    .cloudy-svg {
+        grid-row: 2;
+        margin-top: -50px;
+        margin-left: 85px;
+        padding-left: 35px;
+    }
+}
