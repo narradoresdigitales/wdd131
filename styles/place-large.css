@@ -80,6 +80,7 @@
         padding-left: 35px;
     }
 
+    /* pseudo element-required */
     .cloudy-svg::after {
         content: "- pronóstico";
     }
