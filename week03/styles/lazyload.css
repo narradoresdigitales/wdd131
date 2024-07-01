@@ -13,9 +13,21 @@ img {
     display: block;
     align-self: center;
     margin-bottom: 10px;
-    max-width: 100%;
+    width: 100%;
+    background-color: black; /* Set initial background color to black */
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeIn 12s forwards /* Apply the fadeIn animation */
 }
 
 #lastModified {
     margin-top: -8px;
+}
+
+@keyframes fadeIn {
+   0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
