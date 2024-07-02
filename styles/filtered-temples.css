@@ -125,5 +125,7 @@ h2 {
 
 .label {
     font-size:16px;
+    font-variant: small-caps;
+    color: #4b0082;
 }
 

@@ -1,6 +1,6 @@
 /* Media query for screen 640px and wider */
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 450px) {
     
     .res-grid {
         grid-template-columns: 1fr 1fr;
@@ -13,7 +13,7 @@
 
 
 /* Media query for screens 768px and wider */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 740px) {
     
     nav {
         display: flex;
