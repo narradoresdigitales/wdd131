@@ -57,10 +57,11 @@ nav a:hover {
     border-bottom: 3px solid white;
 }
 
-.container {
+.res-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    text-align: center;
     
 
 }
@@ -115,13 +116,12 @@ footer {
 h2 {
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 /* Adding css for filtered-temples   */
-.res-grid {
-    
-    text-align: center;
-}
+
+
 
 .label {
     font-size:16px;
