@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="author-name">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    
+</head>
+<body>
+    <header> 
+        <h1>Temple Album</h1>
+        <!-- create variable for #burgerMenu <img> in js file to access element-->
+        <img id="burgerMenu" class="burgerMenu" src="images/burger-menu.svg" alt="">
+        
+        <!-- create variable for 'x' in <span> in js file to access element -->
+        <span id="closeButton" class="closeButton">x</span>
+
+        <!-- create variable for #menu in js file to access element -->
+            <nav id="menu">
+                <a href="">Home</a>
+                <a href="">Old</a>
+                <a href="">New</a>
+                <a href="">Large</a>
+                <a href="">Small</a>
+            </nav>
+    </header>
+    <main>
+    <!-- Row1 temple-images -->
+        <h2>Home</h2>
+            
+            <div class="container">
+                <figure>
+                    <img src="images/montevideo.jpg" alt="Montevideo, Uruguay Temple. The Church of Jesus Christ of Latter-day Saints">  
+                    <figcaption>Montevideo, Uruguay Temple</figcaption>
+                </figure>
+    
+                <figure>
+                    <img src="images/montevideo.jpg" alt="Montevideo, Uruguay Temple. The Church of Jesus Christ of Latter-day Saints">  
+                    <figcaption>Montevideo, Uruguay Temple</figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="images/montevideo.jpg" alt="Montevideo, Uruguay Temple. The Church of Jesus Christ of Latter-day Saints">  
+                    <figcaption>Montevideo, Uruguay Temple</figcaption>
+                </figure>
+
+            <!-- Row2 temple-images -->
+                <figure>
+                    <img src="images/montevideo.jpg" alt="Montevideo, Uruguay Temple. The Church of Jesus Christ of Latter-day Saints">  
+                    <figcaption>Montevideo, Uruguay Temple</figcaption>
+                </figure>
+    
+                <figure>
+                    <img  src="images/montevideo.jpg" alt="Montevideo, Uruguay Temple. The Church of Jesus Christ of Latter-day Saints">  
+                    <figcaption>Montevideo, Uruguay Temple</figcaption>
+                </figure>
+        
+                <figure>
+                    <img  src="images/montevideo.jpg" alt="Montevideo, Uruguay Temple. The Church of Jesus Christ of Latter-day Saints">  
+                    <figcaption>Montevideo, Uruguay Temple</figcaption>
+                </figure>
+
+            <!-- Row3 temple-images -->
+                <figure>
+                    <img src="images/montevideo.jpg" alt="Montevideo, Uruguay Temple. The Church of Jesus Christ of Latter-day Saints">  
+                    <figcaption>Montevideo, Uruguay Temple</figcaption>
+                </figure>
+
+                <figure>
+                    <img  src="images/montevideo.jpg" alt="Montevideo, Uruguay Temple. The Church of Jesus Christ of Latter-day Saints">  
+                    <figcaption>Montevideo, Uruguay Temple</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/montevideo.jpg" alt="Montevideo, Uruguay Temple. The Church of Jesus Christ of Latter-day Saints">  
+                    <figcaption>Montevideo, Uruguay Temple</figcaption>
+                </figure>
+            </div>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> Marcus 'Sil' Palmer</p>
+        <p id="lastModified"></p>
+    </footer>
+</body> 
+</html>
