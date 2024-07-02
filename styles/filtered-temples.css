@@ -117,6 +117,13 @@ h2 {
     margin-top: 10px;
 }
 
+/* Adding css for filtered-temples   */
+.res-grid {
+    
+    text-align: center;
+}
 
-
+.label {
+    font-size:16px;
+}
 
