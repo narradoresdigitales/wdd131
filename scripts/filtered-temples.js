@@ -36,7 +36,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-exterior-1416671-wallpaper.jpg"
     },
     {
     templeName: "Yigo Guam",
@@ -71,12 +71,67 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     // Add more temple objects here...
+    {
+    templeName: "Buenos Aires, Argentina",
+    location: "Buenos Aires, Argentina",
+    dedicated: "1986, January, 17",
+    area: 17687,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/400x250/buenos-airies-argentina-temple-1009069-wallpaper.jpg"
+    },
+    {
+    templeName: "Córdoba, Argentina",
+    location: "Córdoba, Argentina",
+    dedicated: "2015, May, 17",
+    area: 34369,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cordoba-argentina/400x250/cordoba-argentina-temples-buildings-1436938-wallpaper.jpg"
+    }
 ];
 
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard() {
-    temples.forEach(temple => {
+// Creating variables for each link
+const oldTemplesLink = document.querySelector(".old");
+const newTemplesLink = document.querySelector(".new");
+const largeTemplesLink = document.querySelector(".large");
+const smallTemplesLink = document.querySelector(".small");
+
+// Add event listeners for each variable/link 
+oldTemplesLink.addEventListener("click", function(event) { 
+    event.preventDefault();
+    createTempleCard(temples.filter(temple => new Date (temple.dedicated) < new Date ("2000-01-01")));
+    closeMenu();
+});
+
+newTemplesLink.addEventListener("click", function(event) {
+    event.preventDefault(); 
+    createTempleCard(temples.filter(temple => new Date (temple.dedicated) >= new Date ("2000-01-01")));
+    closeMenu();
+});
+
+largeTemplesLink.addEventListener("click", function(event)  {
+    event.preventDefault();
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+    closeMenu();
+});
+
+smallTemplesLink.addEventListener("click", function(event)  {
+    event.preventDefault();
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+    closeMenu();
+});
+
+function closeMenu() {
+    nav.classList.remove('open');
+    closeButton.classList.remove('show');
+    closeMenu();
+}
+
+
+function createTempleCard(filteredTemples) {
+    document.querySelector(".res-grid").innerHTML = "";
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
