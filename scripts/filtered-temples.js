@@ -125,7 +125,7 @@ smallTemplesLink.addEventListener("click", function(event)  {
 function closeMenu() {
     nav.classList.remove('open');
     closeButton.classList.remove('show');
-    closeMenu();
+    
 }
 
 
