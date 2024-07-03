@@ -29,6 +29,7 @@ nav {
 
 body {
     font-family: Roboto sans-serif;
+    /* text-align: center; */
 }
 
 #title {
@@ -133,3 +134,7 @@ h2 {
 p {
     font-size: 18px;
 }
+
+/* section {
+    text-align: center;
+} */
