@@ -1,18 +1,40 @@
+/*----------- HEADER --------------*/
+
 header {
     background-color: #b2ffff;
     text-align: center;
     color: black;
 }
 
+/*----------- BODY --------------*/
+
 body {
     background-color: rgb(236, 231, 231);
+    font-size: 16px;
 }
+
+
+
+
+
+
+
 
 /* -----------FORM STYLING SECTION----------- */
 
-wf1 label {
+.wf1 label {
+    display: block;
+    margin: 0px;
+}
+
+.wf1 select {
     display: block;
 }
+
+
+
+
+
 
 /* FOOTER */
 footer {
