@@ -52,7 +52,6 @@ label {
 }
 
 input[type="date"], 
-input[type="checkbox"],
 input[type="radio"],
 input[type="text"],
 textarea,
@@ -64,19 +63,26 @@ input[type="submit"] {
     box-sizing: border-box;
 }
 
+input[type="checkbox"] {
+
+}
+
+input[type="submit"] {
+    width: 95%;
+    margin-top: 10px;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: -10px;
+    
+}
+
+
 .checklist-italics {
     font-style: italic;
     margin-bottom: 10px;
 }
 
 
-
-
-
-
-.user-name {
-    width: 100%;
-}
 
 
 
