@@ -38,13 +38,6 @@ label {
     margin-bottom: 10px;
 }
 
-select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    box-sizing: border-box;
-}
-
 .rating-container {
     display: flex;
     justify-content: space-between;
@@ -58,14 +51,17 @@ select {
     align-items: center;
 }
 
-
-
-
-
-
-input[type="checkbox"] 
-input[type="radio"] {
-    margin-right: 10px;
+input[type="date"], 
+input[type="checkbox"],
+input[type="radio"],
+input[type="text"],
+textarea,
+select,
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
 }
 
 .checklist-italics {
@@ -73,11 +69,15 @@ input[type="radio"] {
     margin-bottom: 10px;
 }
 
-textarea {
+
+
+
+
+
+.user-name {
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
 }
+
 
 
 /* FOOTER */
