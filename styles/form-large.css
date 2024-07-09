@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+    header h1 {
+        width: 84%; 
+        margin: 0 auto; 
+        margin-bottom: 10px;
+        
+    }
+}
+
+@media (min-width: 1024px) {
+    header h1 {
+        width: 63%; 
+        margin: 0 auto; 
+        margin-bottom: 10px;
+        
+    }
+}

@@ -4,6 +4,7 @@ header h1 {
     background-color: white;
     text-align: center;
     color: #00796b;
+    width: 100%;
 }
 
 /*----------- BODY --------------*/
@@ -67,10 +68,6 @@ input[type="submit"] {
     border: 1px solid #cccccc;
 }
 
-
-
-
-
 fieldset label input[type="checkbox"] {
     margin-right: 10px;
 }
@@ -91,8 +88,6 @@ input[type="submit"]:hover {
     background-color: #005f56;
 }
 
-
-
 .checklist-italics {
     font-style: italic;
     margin-bottom: 10px;
@@ -100,21 +95,18 @@ input[type="submit"]:hover {
 }
 
 
-
-
-
 /* FOOTER */
 footer {
     text-align: center;
     margin-top: 20px;
     background-color:  #b2ffff;
-    color: #ffffff;
+    color: black;
 
 }
 
 .footer-top, .footer-bottom  {
     background-color: white;
     margin: 0;
-    color: #ffffff;
+    color: black;
 }
 

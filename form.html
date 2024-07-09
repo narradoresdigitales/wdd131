@@ -7,6 +7,7 @@
     <meta name="author" content="Marcus 'Sil' Palmer">
     <title>Product Review form</title>
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
     <script src="scripts/form.js" defer></script>
     <script src="scripts/form-getdates.js" defer></script>
 </head>
@@ -34,7 +35,7 @@
             <div class="rating-container"> 
                 <label>
                     <span>&#9734;</span>
-                    <input type="radio" name="one-star" value="">
+                    <input type="radio" name="rating" value="">
                 </label>
                 <label>
                     <span>&#9734; &#9734;</span>
@@ -42,15 +43,15 @@
                 </label>
                 <label>
                     <span>&#9734; &#9734; &#9734;</span>
-                    <input type="radio" name="three-stars" value="">
+                    <input type="radio" name="rating" value="">
                 </label>
                 <label>
                     <span>&#9734; &#9734; &#9734; &#9734;</span>
-                    <input type="radio" name="four-stars" value="">
+                    <input type="radio" name="rating" value="">
                 </label>
                 <label>
                     <span>&#9734; &#9734; &#9734; &#9734; &#9734;</span>
-                    <input type="radio" name="five-stars" value="">
+                    <input type="radio" name="rating" value="">
                 </label>
             </div>
         </fieldset>
@@ -91,12 +92,11 @@
 </main>
 
     <footer>
-        <p class="footer-top">©<span id="currentYear" ></span> Marcus 'Sil' Palmer</p>
-        <p  class="footer-bottom" id="lastModified"></p> 
+        <p class="footer-top">©<span id="currentYear"></span> Marcus 'Sil' Palmer</p>
+        <p class="footer-bottom" id="lastModified"></p> 
     </footer> 
 
 </body>
-
 
 </html>
 
