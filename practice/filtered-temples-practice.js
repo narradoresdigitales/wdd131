@@ -177,6 +177,7 @@ function createTempleCard(filteredTemples) {
     document.querySelector(".res-grid").innerHTML = "";
     filteredTemples.forEach(temple => {
         let card = document.createElement("section");
+        card.classList.add('temple-section')
         let name = document.createElement("h3");
         let location = document.createElement("p");
         let dedication = document.createElement("p");

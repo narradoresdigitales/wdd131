@@ -29,8 +29,11 @@
     }
 
     .res-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        /* grid-template-columns: repeat(3, 1fr);
+        gap: 10px; */
+        display: flex;
+        text-align: center;
+        justify-content: center;
     }
 
     figure {
