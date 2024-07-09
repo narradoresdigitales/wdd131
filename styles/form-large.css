@@ -15,3 +15,12 @@
         
     }
 }
+
+@media (min-width: 1440px) {
+    header h1 {
+        width: 45%; 
+        margin: 0 auto; 
+        margin-bottom: 10px;
+        
+    }
+}
