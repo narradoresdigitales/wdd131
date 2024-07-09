@@ -11,23 +11,75 @@
 
 <body>
     <header><h1>Product Review</h1>
-        <form method="get" action="review.html" class="wf1">
     </header>
 
 <main>
+    <form method="get" action="review.html" class="wf1">
 
-
-
-        <fieldset>
-            <label>Product Name
-                <select name="product">
+        <!-- Product Review fieldset-->
+        <fieldset class="no-border">
+            <label id="product-name" name="product-name" required>Product Name</label>
+                <select id="product" name="product">
                     <option value="">Choose a Product...</option>
                 </select>
-            </label>
-
-
+        
         </fieldset>
 
+        <!-- Overall Rating fieldset-->
+        <fieldset class="no-border">
+            <div> Overall Rating</div>
+            <div class="rating-container"> 
+                <label>
+                    <span>&#9734</span>
+                    <input type="radio" name="" value="">
+                </label>
+                <label>
+                    <span>&#9734 &#9734</span>
+                    <input type="radio" name="" value="">
+                </label>
+                <label>
+                    <span>&#9734 &#9734 &#9734</span>
+                    <input type="radio" name="" value="">
+                </label>
+                <label>
+                    <span>&#9734 &#9734 &#9734 &#9734</span>
+                    <input type="radio" name="" value="">
+                </label>
+                <label>
+                    <span>&#9734 &#9734 &#9734 &#9734 &#9734</span>
+                    <input type="radio" name="" value="">
+                </label>
+            </div>
+        </fieldset>
+        <!-- Date of Installation fieldset-->
+
+        <fieldset class="no-border">
+            <label>Date of Installation</label>
+            <input type="date" name="installation-date">
+        </fieldset>
+        
+        <!-- Checkbox fieldset-->
+
+        <fieldset class="no-border">
+            <div>Which features did you find useful in the product?</div>
+            <p class="checklist-italics">(Check all that apply)</p>
+            <label><input type="checkbox" id="durability" name="durability" value="durability">Durability</label>
+            <label><input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="performance" value="performance">Performance</label>
+            <label><input type="checkbox" id="design" name="design" value="design">Design</label>
+        </fieldset>
+
+        <!-- Written Review fieldset-->
+        <fieldset class="no-border">
+            <label id="written-review" name="written-review">Written Review (Optional)</label>
+            <textarea id="text-area" name="text-area" rows="4" cols="50" ></textarea>
+        </fieldset>
+
+        
+
+
+        
+    
 
 
 
