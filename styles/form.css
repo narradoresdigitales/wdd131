@@ -65,10 +65,15 @@ input[type="submit"] {
 
 
 
+
+
+fieldset label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
 input[type="submit"] {
-    width: 95%;
+    width:92%;
     margin-top: 10px;
-    align-items: center;
     margin-left: 10px;
     margin-right: -10px;
     
