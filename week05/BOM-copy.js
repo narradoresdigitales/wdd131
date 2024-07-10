@@ -1,3 +1,16 @@
+//Declare an array named chaptersArray
+
+const input = document.querySelector('#favchap');
+const button = document.querySelector('button');
+const list = document.querySelector('#list');
+
+let chaptersArray = getChapterList() || [];
+
+chaptersArray.forEach(chapter => {
+    displayList(chapter);
+});
+
+
 //reference to the input
 const input = document.querySelector('#favchap');
 
@@ -10,38 +23,49 @@ const list = document.querySelector('#list')
 
 
 //create a click event listener for the Add Chapter button
-button.addEventListener('click', function() {
-    if (input.value.trim() !== '') { 
-
-        //create a li element for each entry
-        const li = document.createElement('li');
-        
-        // set the li text content to the input value
-        li.textContent = input.value;
-
-        //Create a delete button
-        const deleteButton = document.createElement('button');
-
-        //Populate the button textContent with a ❌
-        deleteButton.textContent = '❌';
-        
-        //Append the li element variable with the delete button
-        li.append(deleteButton);
-
-        // Append the li element to the list
-        list.append(li)
-        
-        deleteButton.addEventListener('click', function () {
-            list.removeChild(li);
-            input.focus();
-    });
-        
-        
-        
-
-    input.value = '';
-    input.focus();
-
+button.addEventListener('click', () => {
+    if (input.value !== 0) { 
+        displayList(input.value);
+        chaptersArray.push(input.value);
+        setChapterList();
+        input.value = '';
+        input.focus();
     }
+});
 
-}); 
+function displayList(item) {
+    let li = document.createElement('li');
+    let deletebutton = document.createElement('button');
+    li.textContent = item; // note the use of the displayList parameter 'item'
+    deletebutton.textContent = '❌';
+    deletebutton.classList.add('delete'); // this references the CSS rule .delete{width:fit-content;} to size the delete button
+    li.append(deletebutton);
+    list.append(li);
+    deletebutton.addEventListener('click', function () {
+    list.removeChild(li);
+    deleteChapter(li.textContent); // note this new function that is needed to remove the chapter from the array and localStorage.
+    input.focus(); // set the focus back to the input
+});
+    console.log('I like to copy code instead of typing it out myself and trying to understand it.');
+}
+
+function setChapterList() {
+    localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray));
+}
+
+function getChapterList() {
+    return JSON.parse(localStorage.getItem('myFavBOMList'));
+}
+        
+chapter = chapter.slice(0, chapter.length - 1); 
+
+chaptersArray = chaptersArray.filter((item) => item !== chapter);
+
+function deleteChapter(chapter) {
+    chapter = chapter.slice(0, chapter.length - 1);
+    chaptersArray = chaptersArray.filter(item => item !== chapter);
+    setChapterList();
+}
+
+
+
