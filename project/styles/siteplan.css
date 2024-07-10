@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 20px;
     background-color: #f9f9f9;
@@ -50,6 +50,8 @@ h1 {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 .card h2 {
@@ -58,18 +60,61 @@ h1 {
     color: #008080;
 }
 
-/* List styles */
-.list-title {
-    font-weight: bold;
-}
-
-
-
-
-
 
 .card p {
     font-size: 18px;
     color: #333;
 }
 
+/* List styles */
+.card ol,
+.card ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card ol {
+    color: #333; /* Dark text color for ordered list */
+    list-style-type: decimal; /* Ordered list style */
+}
+
+.card ul {
+    color: #333; /* Dark text color for unordered list */
+    list-style-type: disc; /* Unordered list style */
+}
+
+.card ol li,
+.card ul li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.color-info {
+    margin-bottom: 20px;
+}
+
+.color-box {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff; /* White text color for contrast */
+    margin-top: 5px;
+
+}
+
+.color-box p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.color-teal {
+    
+    background-color: #008080; /* Teal background */
+    padding: 5px 10px; /* Add padding for better appearance */
+    border-radius: 5px; /* Rounded corners */
+    
+}
+
+.light-gray {
+    background-color: #CCCCCC;
+}
