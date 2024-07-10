@@ -5,6 +5,18 @@
         margin-bottom: 10px;
         
     }
+
+    input[type="submit"] {
+        width:95%;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: -10px;
+        background-color: #00796b;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        
+    }
 }
 
 @media (min-width: 1024px) {
