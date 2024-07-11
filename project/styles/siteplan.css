@@ -89,8 +89,36 @@ h1 {
     line-height: 1.6;
 }
 
-.color-info {
-    margin-bottom: 20px;
+/* Color Schema Card */ 
+#color-schema-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#color-schema-card .color-info {
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+#color-schema-card .color-code {
+    font-weight: bold;
+    width: 120px;
+    text-align: right;
+    margin: 0;
+}
+
+#teal-hex-code{
+    padding-left: 72px;
+}
+
+.teal {
+    margin-top: -5px;
+}
+
+.light-gray {
+    margin-top: -5px;
 }
 
 .color-box {
@@ -103,18 +131,7 @@ h1 {
 }
 
 .color-box p {
-    margin: 0;
-    font-size: 16px;
+    width: 50px;
+    height: 50px;
 }
 
-.color-teal {
-    
-    background-color: #008080; /* Teal background */
-    padding: 5px 10px; /* Add padding for better appearance */
-    border-radius: 5px; /* Rounded corners */
-    
-}
-
-.light-gray {
-    background-color: #CCCCCC;
-}
