@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/wireframe.css">
     <link rel="stylesheet" href="styles/wireframe-large.css">
-    <script src="scripts/wirefreame.js" defer></script>
+    <script src="scripts/wireframe.js" defer></script>
 
 </head>
 <body>
@@ -17,7 +17,7 @@
         <div class="header-container">
             <nav>
                 <div class="burger-menu" id="burgerMenu">&#9776;</div>
-                <ul>
+                <ul class="nav-links" id="navLinks">
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#experience">Experience</a></li>
@@ -69,7 +69,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Marcus Palmer. All rights reserved.</p>
+        <p>&copy;<span id="currentYear"></span> 2024 Marcus Palmer. All rights reserved.</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>

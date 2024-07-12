@@ -17,8 +17,8 @@ body {
 
 /* Header styles */
 header {
-    background-color:  #CCCCCC;
-    color: black; 
+    background-color: #CCCCCC;
+    color: black;
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -26,20 +26,19 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
-/* Burger Menu*/
-
+/* Burger Menu */
 .burger-menu {
     display: none;
     font-size: 30px;
     cursor: pointer;
 }
 
-/* Navigation Links*/
-
+/* Navigation Links */
 .nav-links {
     list-style: none;
     margin: 0;
@@ -49,17 +48,14 @@ header {
 }
 
 .nav-links a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 18px;
 }
 
 .nav-links a:hover {
     text-decoration: underline;
-    
-
 }
-
 
 header nav ul {
     list-style: none;
@@ -169,32 +165,3 @@ footer {
 footer p {
     margin: 0;
 }
-
-
-/* Media query for mobile view */
-@media (max-width: 768px) {
-    .burger-menu {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        background-color: #00796b;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links a {
-        padding: 10px;
-    }
-}
-
-
