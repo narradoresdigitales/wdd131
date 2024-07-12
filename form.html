@@ -22,8 +22,8 @@
 
         <!-- Product Review fieldset-->
         <fieldset class="no-border">
-            <label id="product-name">Product Name
-                <select id="product" name="product" required></label>
+            <label for="product-name">Product Name</label>
+                <select id="product" name="product" required>
                     <option value="">Choose a Product...</option>
                 </select>
         </fieldset>
@@ -35,23 +35,23 @@
             <div class="rating-container"> 
                 <label>
                     <span>&#9734;</span>
-                    <input type="radio" id="one-star" name="rating" value="" required>
+                    <input type="radio" id="one-star" name="rating" value="1" required>
                 </label>
                 <label>
                     <span>&#9734; &#9734;</span>
-                    <input type="radio" id="two-stars" name="rating" value="" required>
+                    <input type="radio" id="two-stars" name="rating" value="2" required>
                 </label>
                 <label>
                     <span>&#9734; &#9734; &#9734;</span>
-                    <input type="radio" id="three-stars" name="rating" value="" required>
+                    <input type="radio" id="three-stars" name="rating" value="3" required>
                 </label>
                 <label>
                     <span>&#9734; &#9734; &#9734; &#9734;</span>
-                    <input type="radio" id="four-stars" name="rating" value="" required>
+                    <input type="radio" id="four-stars" name="rating" value="4" required>
                 </label>
                 <label>
                     <span>&#9734; &#9734; &#9734; &#9734; &#9734;</span>
-                    <input type="radio" id="five-stars" name="rating" value="" required>
+                    <input type="radio" id="five-stars" name="rating" value="5" required>
                 </label>
             </div>
         </fieldset>
@@ -68,10 +68,10 @@
         <fieldset class="no-border">
             <div>Which features did you find useful in the product?</div>
             <p class="checklist-italics">(Check all that apply)</p>
-            <label><input type="checkbox" id="durability" name="durability" value="durability">Durability</label>
-            <label><input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">Ease of Use</label>
-            <label><input type="checkbox" id="performance" name="performance" value="performance">Performance</label>
-            <label><input type="checkbox" id="design" name="design" value="design">Design</label>
+            <label><input type="checkbox" id="durability" name="features" value="durability">Durability</label>
+            <label><input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="features" value="performance">Performance</label>
+            <label><input type="checkbox" id="design" name="features" value="design">Design</label>
         </fieldset>
 
         <!-- Written Review fieldset-->
