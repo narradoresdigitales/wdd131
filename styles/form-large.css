@@ -36,3 +36,12 @@
         
     }
 }
+
+@media (min-width: 2560px) {
+    header {
+        width: 56%; 
+        margin: 0 auto; 
+        margin-bottom: 10px;
+        
+    }
+}
