@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product Review Form ">
+    <meta name="description" content="Product Review Page">
     <meta name="author" content="Marcus 'Sil' Palmer">
-    <title>Product Review form</title>
-    <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="styles/form-large.css">
-    <script src="scripts/form.js" defer></script>
-    <script src="scripts/form-getdates.js" defer></script>
+    <title>Product Reviews</title>
+    <link rel="stylesheet" href="styles/review.css">
     <script src="scripts/review.js" defer></script>
-
 </head>
 
 <body>
-    <header><h1>Product Review</h1>
+    <header>
+        <h1>Product Reviews</h1>
     </header>
 
-    <!-- CONTENT HERE -->
-<div class="container">
-    <h3>Review Submitted</h3>
-        <p>"Thank you for submitting your review! Your feedback has been successfully posted."</p>
-        <p>You have completed <span id="reviewCount">0</span> reviews.</p>
+    <main>
+        <div id="reviewCountContainer">
+            <h2>Review Count:</h2>
+            <div id="reviewCount"></div>
+        </div>
         
-    </div>
+        <!-- Confirmation Message -->
+        <div id="confirmationMessageContainer" class="confirmation-message-container">
+            <div id="confirmationMessage" style="display: none;" class="confirmation-message">
+            <p>Your review has been successfully submitted!</p>
+            </div>
+        </div>
+
+        
+        <!-- Other content of review.html -->
+    </main>
 
     <footer>
-        <p class="footer-top">©<span id="currentYear"> 
-        </span> Marcus 'Sil' Palmer</p>
+        <p class="footer-top">©<span id="currentYear"></span> Marcus 'Sil' Palmer</p>
         <p class="footer-bottom" id="lastModified"></p>   
-        
-    </footer> 
+    </footer>
 </body>
 </html>

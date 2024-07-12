@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     // Check if the counter exists in localStorage
     let reviewCounter = localStorage.getItem('reviewCounter');
@@ -11,37 +10,24 @@ document.addEventListener('DOMContentLoaded', () => {
         reviewCounter = parseInt(reviewCounter, 10);
     }
     
-    // Increment the counter
-    reviewCounter += 1;
+    // Increment the counter (this should be done when a new review is submitted, not here)
+    // reviewCounter += 1; // Remove or comment out this line to avoid incrementing on page load
     
-    // Save the updated counter back to localStorage
-    localStorage.setItem('reviewCounter', reviewCounter);
-    
+    // Save the updated counter back to localStorage (only needed if incrementing)
+    // localStorage.setItem('reviewCounter', reviewCounter); // Remove or comment out this line
+
     // Display the counter value to the user
-    document.getElementById('reviewCount').textContent = reviewCounter;
+    const reviewCountElement = document.getElementById('reviewCount');
+    if (reviewCountElement) {
+        reviewCountElement.textContent = reviewCounter;
+    } else {
+        console.error('Element with ID "reviewCount" not found.');
+    }
 });
 
-
-
-
-
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     // Check if the counter exists in localStorage
-//     let reviewCounter = localStorage.getItem('reviewCounter');
-    
-//     // If it doesn't exist, initialize it to 0
-//     if (!reviewCounter) {
-//         reviewCounter = 0;
-//     }
-    
-//     // Increment the counter
-//     reviewCounter = parseInt(reviewCounter) + 1;
-    
-//     // Save the updated counter back to localStorage
-//     localStorage.setItem('reviewCounter', reviewCounter);
-    
-//     // Display the counter value to the user
-//     document.getElementById('reviewCount').textContent = reviewCounter;
-// });
+// After updating the review counter and submitting the form programmatically
+// Show the confirmation message
+const confirmationMessage = document.getElementById('confirmationMessage');
+if (confirmationMessage) {
+    confirmationMessage.style.display = 'block';
+}

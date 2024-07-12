@@ -1,5 +1,7 @@
 /*----------- HEADER --------------*/
 
+
+
 header h1 {
     background-color: white;
     text-align: center;
@@ -21,7 +23,7 @@ form {
     margin: 0 auto;
     padding: 1em;
     background: #ffffff;
-    border: 1px solid #cccccc;
+    border: 2px solid #00796b;
     border-radius: 5px;
 }
 
@@ -34,13 +36,19 @@ form {
 fieldset {
     display: block;
     margin-bottom: 15px;
+    border-left: 5px solid #004d40; /* Darker teal accent */
+    padding-left: 10px;
 }
 
 label {
     display: block;
     margin-bottom: 10px;
-    color: #333333;
+    color: #004d40;
     
+}
+
+.rating {
+    color: #004d40; /* This targets <div> 'Overall Rating' */
 }
 
 .rating-container {
@@ -100,7 +108,7 @@ input[type="submit"]:hover {
 footer {
     text-align: center;
     margin-top: 20px;
-    background-color:  #b2ffff;
+    background-color:  #e0f7fa;
     color: black;
 
 }
@@ -148,3 +156,6 @@ h3 {
     font-weight: bold;
     color: #00796b;
 }
+
+
+/* Styles for Review.html */
