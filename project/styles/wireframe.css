@@ -30,6 +30,37 @@ header {
     margin-bottom: 20px;
 }
 
+/* Burger Menu*/
+
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Navigation Links*/
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    
+
+}
+
+
 header nav ul {
     list-style: none;
     padding: 0;
@@ -139,9 +170,31 @@ footer p {
     margin: 0;
 }
 
-/* Responsive adjustments */
+
+/* Media query for mobile view */
 @media (max-width: 768px) {
-    .card {
-        width: 100%; /* Full width on smaller screens */
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #00796b;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 10px;
     }
 }
+
+
