@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Increment the counter (this should be done when a new review is submitted, not here)
-    // reviewCounter += 1; // Remove or comment out this line to avoid incrementing on page load
+    reviewCounter += 1; // Remove or comment out this line to avoid incrementing on page load
     
     // Save the updated counter back to localStorage (only needed if incrementing)
     // localStorage.setItem('reviewCounter', reviewCounter); // Remove or comment out this line
@@ -31,3 +31,13 @@ const confirmationMessage = document.getElementById('confirmationMessage');
 if (confirmationMessage) {
     confirmationMessage.style.display = 'block';
 }
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
+
+
+    const lastModified = document.lastModified;
+    document.getElementById("lastModified").textContent = `Last modified: ${lastModified}`;
+});
