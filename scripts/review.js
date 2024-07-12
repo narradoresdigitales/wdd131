@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Increment the counter (this should be done when a new review is submitted, not here)
-    reviewCounter += 1; // Remove or comment out this line to avoid incrementing on page load
+    // reviewCounter += 1; // Remove or comment out this line to avoid incrementing on page load
     
     // Save the updated counter back to localStorage (only needed if incrementing)
     // localStorage.setItem('reviewCounter', reviewCounter); // Remove or comment out this line
