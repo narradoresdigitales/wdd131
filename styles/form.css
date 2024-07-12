@@ -12,10 +12,21 @@ header h1 {
 /*----------- BODY --------------*/
 
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
     font-size: 20px;
     line-height: 1.6;
     color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    /* Adjust headings as needed */
+}
+
+p, label, input, select, textarea, button {
+    font-family: 'Roboto', sans-serif;
+    /* Adjust text elements as needed */
 }
 
 form {
@@ -90,11 +101,16 @@ input[type="submit"] {
     color: #ffffff;
     border: none;
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    
     
 }
 
 input[type="submit"]:hover {
     background-color: #005f56;
+    
+    
 }
 
 .checklist-italics {
@@ -157,5 +173,63 @@ h3 {
     color: #00796b;
 }
 
+.required {
+    color: red;
+    margin-left: 3px; /* Example: Adjust spacing between asterisk and text */
+}
 
-/* Styles for Review.html */
+
+/* Media query for mobile devices */
+@media screen and (max-width: 320px) {
+    .rating-container {
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+
+    .rating-container label {
+        flex-basis: 50%; /* Make each label take 50% width */
+        box-sizing: border-box;
+        padding: 5px; /* Add padding to create spacing between items */
+        text-align: center; /* Center align the content */
+    }
+
+    .rating-container label input[type="radio"] {
+        margin-top: 5px; /* Adjust top margin for spacing */
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .rating-container {
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+
+    .rating-container label {
+        flex-basis: 50%; /* Make each label take 50% width */
+        box-sizing: border-box;
+        padding: 5px; /* Add padding to create spacing between items */
+        text-align: center; /* Center align the content */
+    }
+
+    .rating-container label input[type="radio"] {
+        margin-top: 5px; /* Adjust top margin for spacing */
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .rating-container {
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+
+    .rating-container label {
+        flex-basis: 50%; /* Make each label take 50% width */
+        box-sizing: border-box;
+        padding: 5px; /* Add padding to create spacing between items */
+        text-align: center; /* Center align the content */
+    }
+
+    .rating-container label input[type="radio"] {
+        margin-top: 5px; /* Adjust top margin for spacing */
+    }
+    
+}

@@ -31,11 +31,14 @@ main {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #reviewCountContainer h2 {
-    color: #00796b;
-    margin-bottom: 10px;
+    margin: 0; /* Remove any default margin */
+    padding: 10px; /* Add padding for spacing */
+    color: #333; /* Adjust text color if needed */
+    
 }
 
 #reviewCount {
