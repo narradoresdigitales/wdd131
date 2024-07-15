@@ -33,9 +33,35 @@
 
     <main>
         <section id="about" class="card-container">
-            <div class="card">
+            <div class="card" id="aboutCard">
                 <h2>About Me</h2>
-                <p>Description about yourself.</p>
+                <div class="summary">
+                    <p>Hello! I'm Marcus Palmer, a passionate aspiring web developer with a keen interest in front-end technologies.</p>
+                </div>
+                <div class="details-hidden">
+                    <h3>Programming Interests</h3>
+                    <ul>
+                        <li>Front-end Development (HTML, CSS, JavaScript)</li>
+                        <li>Responsive Web Design</li>
+                        <li>User Experience (UX) Design</li>
+                        <li>JavaScript Frameworks (React, Vue)</li>
+                        <li>Version Control (Git)</li>
+                    </ul>
+                    
+                    <h3>Education Goals</h3>
+                    <p>I am currently pursuing a degree in Computer Science, aiming to deepen my understanding of software development principles and practices. My education goals include:</p>
+                    <ul>
+                        <li>Mastering full-stack development</li>
+                        <li>Building a strong foundation in data structures and algorithms</li>
+                        <li>Exploring cloud computing and DevOps</li>
+                        <li>Contributing to open-source projects</li>
+                    </ul>
+                </div>
+
+
+
+
+                
             </div>
         </section>
 
@@ -72,5 +98,15 @@
         <p>&copy;<span id="currentYear"></span> 2024 Marcus Palmer. All rights reserved.</p>
         <p id="lastModified"></p>
     </footer>
+
+
+    <!-- Modal structure-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
 </body>
 </html>

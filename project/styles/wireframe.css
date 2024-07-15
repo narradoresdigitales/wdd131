@@ -137,6 +137,56 @@ main {
     margin-top: 10px;
 }
 
+
+/* Styles for details-hidden */
+/* Styles for details-hidden */
+.details-hidden {
+    display: none; /* Initially hidden */
+    padding: 20px; /* Padding for content */
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left; /* Align text to the left */
+}
+
+.details-hidden h3 {
+    font-size: 20px; /* Heading font size */
+    color: red; /* Dark text color */
+    margin-top: 0; /* Remove top margin */
+    padding-bottom: 10px; /* Space below heading */
+    border-bottom: 1px solid #ccc; /* Bottom border below heading */
+    
+}
+
+.details-hidden p {
+    font-size: 16px; /* Paragraph font size */
+    line-height: 1.6; /* Line height for readability */
+    color: #666; /* Medium gray text color */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+.details-hidden ul {
+    list-style: none; /* Remove default list styles */
+    padding-left: 20px; /* Increase left padding */
+}
+
+.details-hidden ul li {
+    margin-bottom: 5px; /* Space between list items */
+    padding-left: 20px; /* Left padding for list items */
+    position: relative; /* Position relative for pseudo-elements */
+}
+
+.details-hidden ul li::before {
+    content: '\2022'; /* Bullet character */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Position left */
+    color: #008080; /* Teal bullet color */
+}
+
+
+
+
 /* View Project button styles */
 .view-project-btn {
     display: inline-block;
@@ -164,4 +214,47 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Modal styles */
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black with transparency */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
