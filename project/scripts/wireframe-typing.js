@@ -1,4 +1,5 @@
 //Typing text
+// Typing text for hero
 const typingText = document.querySelector('.typing-text');
 const message = "I have a passion for web development and enjoy working with HTML, CSS, and JavaScript. Explore my projects to see what I've been working on recently!";
 let index = 0;
@@ -16,4 +17,5 @@ function typeEffect() {
 document.addEventListener('DOMContentLoaded', () => {
     typeEffect();
 });
+
   
