@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const burgerMenu = document.getElementById('burgerMenu');
     const navLinks = document.querySelector('.nav-links');
-    const modal = document.getElementById('modal');
-    const closeBtn = document.querySelector('.close-btn');
-    const modalBody = document.getElementById('modal-body');
+    const modal = document.getElementById('myModal');
+    const modalBody = document.querySelector('.modal-body');
+    const closeBtn = document.querySelector('.closeBtn');
+    const cards = document.querySelectorAll('.card');
 
     if (burgerMenu) {
         burgerMenu.addEventListener('click', () => {
@@ -29,71 +30,42 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Last modified element not found.');
     }
 
-    if (modal && modalBody) {
-        // Open modal with card content
-        document.querySelectorAll('.card').forEach(card => {
-            card.addEventListener('click', () => {
-                const content = card.innerHTML;
-                modalBody.innerHTML = content;
-                modal.style.display = 'block';
-            });
-        });
+    // Function to open modal with content
+    function openModal(content) {
+        modalBody.innerHTML = content;
+        modal.style.display = 'block';
+    }
 
-        if (closeBtn) {
-            // Close modal
-            closeBtn.addEventListener('click', () => {
-                modal.style.display = 'none';
-            });
-        } else {
-            console.error('Close button element not found.');
-        }
+    // Function to close modal
+    function closeModal() {
+        modal.style.display = 'none';
+    }
 
-        // Close modal when clicking outside of the modal content
-        window.addEventListener('click', (event) => {
-            if (event.target === modal) {
-                modal.style.display = 'none';
+    // Event listeners for opening modals on card click
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            const detailsHidden = card.querySelector('.details-hidden');
+            if (detailsHidden) {
+                openModal(detailsHidden.innerHTML);
+            } else {
+                console.error('Details hidden element not found in card.');
             }
         });
-    } else {
-        if (!modal) console.error('Modal element not found.');
-        if (!modalBody) console.error('Modal body element not found.');
-    }
-});
+    });
 
-//Display summary for 'About Me' card
-document.addEventListener('DOMContentLoaded', () => {
-    const aboutCard = document.getElementById('aboutCard');
-    const modal = document.getElementById('myModal');
-    const modalBody = document.querySelector('.modal-body');
-    const detailsHidden = document.querySelector('.details-hidden'); // Adjust selector based on your HTML structure
-
-    if (aboutCard && modal && modalBody && detailsHidden) {
-        // Update modal content with details-hidden HTML
-        modalBody.innerHTML = detailsHidden.innerHTML;
-
-        // Open modal when clicking on the About Me card
-        aboutCard.addEventListener('click', () => {
-            modal.style.display = 'block';
+    // Event listener for closing modal when close button is clicked
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            closeModal();
         });
+    } else {
+        console.error('Close button element not found.');
+    }
 
-        // Close modal when clicking on close button
-        const closeBtn = modal.querySelector('.close');
-        if (closeBtn) {
-            closeBtn.addEventListener('click', () => {
-                modal.style.display = 'none';
-            });
-        } else {
-            console.error('Close button element not found.');
+    // Event listener for closing modal when clicking outside of modal content
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
         }
-
-        // Close modal when clicking outside of modal content
-        window.addEventListener('click', (event) => {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
-    } else {
-        console.error('Elements not found.');
-    }
+    });
 });
-

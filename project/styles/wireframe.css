@@ -142,46 +142,6 @@ main {
 /* Styles for details-hidden */
 .details-hidden {
     display: none; /* Initially hidden */
-    padding: 20px; /* Padding for content */
-    background-color: #fff; /* White background */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    text-align: left; /* Align text to the left */
-}
-
-.details-hidden h3 {
-    font-size: 20px; /* Heading font size */
-    color: red; /* Dark text color */
-    margin-top: 0; /* Remove top margin */
-    padding-bottom: 10px; /* Space below heading */
-    border-bottom: 1px solid #ccc; /* Bottom border below heading */
-    
-}
-
-.details-hidden p {
-    font-size: 16px; /* Paragraph font size */
-    line-height: 1.6; /* Line height for readability */
-    color: #666; /* Medium gray text color */
-    margin-bottom: 15px; /* Space below paragraphs */
-}
-
-.details-hidden ul {
-    list-style: none; /* Remove default list styles */
-    padding-left: 20px; /* Increase left padding */
-}
-
-.details-hidden ul li {
-    margin-bottom: 5px; /* Space between list items */
-    padding-left: 20px; /* Left padding for list items */
-    position: relative; /* Position relative for pseudo-elements */
-}
-
-.details-hidden ul li::before {
-    content: '\2022'; /* Bullet character */
-    position: absolute; /* Absolute positioning */
-    left: 0; /* Position left */
-    color: #008080; /* Teal bullet color */
 }
 
 
@@ -254,6 +214,66 @@ footer p {
 
 .close:hover,
 .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Style Elements within a modal*/
+/* Style Elements within a modal */
+.modal-body {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.modal-body h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-body p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.modal-body ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 20px; /* Added margin between ul elements */
+}
+
+.modal-body ul li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.modal-body ul li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    color: #008080;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
