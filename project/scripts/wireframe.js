@@ -14,6 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Burger menu element not found.');
     }
 
+//
+
+
+
+
+
+//
+
+
+
+
+
+
     // Add the year and last modified date
     const currentYear = document.getElementById('currentYear');
     const lastModified = document.getElementById('lastModified');
