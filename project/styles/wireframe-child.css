@@ -120,3 +120,16 @@ footer {
     background-color: #006666; /* Darker teal on hover */
 }
 
+.image-container {
+    width: 300px; /* Adjust according to your layout */
+    height: 200px; /* Adjust according to your layout */
+    background-color: #f0f0f0; /* Placeholder background */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.image-container:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    cursor: pointer; /* Change cursor to indicate clickable */
+}
+
+
