@@ -107,13 +107,13 @@ header nav ul li a:hover {
 /* Typing text*/
 .typing-text {
     font-size: 1.2rem;
-    color: #666; /* Adjust text color as needed */
+    color: #666;
     margin-bottom: 20px;
-    white-space: nowrap; /* Prevent line breaks in typing effect */
-    overflow: hidden; /* Hide overflow while typing */
-    border-right: 2px solid #333; /* Cursor effect */
-    padding-right: 10px; /* Space for cursor effect */
+    overflow: hidden;
+    border-right: 2px solid #333;
+    padding-right: 10px;
 }
+
 
 
 

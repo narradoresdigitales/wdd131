@@ -1,4 +1,3 @@
-//Typing text
 // Typing text for hero
 const typingText = document.querySelector('.typing-text');
 const message = "I have a passion for web development and enjoy working with HTML, CSS, and JavaScript. Explore my projects to see what I've been working on recently!";
@@ -10,6 +9,9 @@ function typeEffect() {
         typingText.textContent += message.charAt(index);
         index++;
         setTimeout(typeEffect, typingSpeed);
+    } else {
+        // Remove the cursor effect when typing is complete
+        typingText.style.borderRight = 'none';
     }
 }
 
@@ -17,5 +19,3 @@ function typeEffect() {
 document.addEventListener('DOMContentLoaded', () => {
     typeEffect();
 });
-
-  
