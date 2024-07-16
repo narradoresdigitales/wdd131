@@ -94,10 +94,12 @@ footer {
 
 .project-details {
     margin-top: 20px;
+    text-align: center; 
+
 }
 
 .project-details h2 {
-    margin-top: 0;
+    margin-top: 20px;
     font-size: 24px;
     color: #008080; /* Teal color */
 }
@@ -120,11 +122,36 @@ footer {
     background-color: #006666; /* Darker teal on hover */
 }
 
+/* ------------           ----------------*/ 
+
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Adjust margin-top as needed */
+}
+
+
 .image-container {
-    width: 300px; /* Adjust according to your layout */
-    height: 200px; /* Adjust according to your layout */
-    background-color: #f0f0f0; /* Placeholder background */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    width: 100%;
+    max-width: 600px; /* Set a max width for the image container */
+    height: 400px; /* Set a height for the placeholder */
+    background-color: #f0f0f0; /* Light gray background for the placeholder */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Space between the image and the instruction */
+}
+
+
+.hover-instruction {
+    color: #666; /* Medium gray text color */
+    background-color: #e0e0e0; /* Button-like background */
+    padding: 5px 10px; /* Padding for button-like appearance */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0; /* Remove default margin */
+    display: block;
 }
 
 .image-container:hover {
