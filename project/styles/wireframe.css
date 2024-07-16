@@ -170,7 +170,24 @@ main {
     display: none; /* Initially hidden */
 }
 
+.learn-more {
+    display:none;
+    text-align: center;
+    margin-top: 10px;
+    color: #666; /* Medium gray text color */
+    cursor: pointer;
+    border: 1px solid #008080;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
 
+.card:hover .learn-more {
+    display: block;
+    background-color: #f0f0f0; /* Light gray background on hover */
+    color: #333; /* Darker text color on hover */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+}
 
 
 /* View Project button styles */
