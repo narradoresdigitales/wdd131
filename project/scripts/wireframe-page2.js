@@ -1,53 +1,80 @@
-// Define your image object
-const imageObject = [ 
+// Define your image objects
+const imageObjects = [
     {
-        src: 'images/conda_activate.png', // Update with the path to your Project 2 image
+        src: 'images/conda_activate.png',
         alt: 'Activate your conda environment.'
     },
-
     {
         src: 'images/cd_filepath.png',
-        alt: 'select working directory.'
-    }, 
-
+        alt: 'Select working directory.'
+    },
     {
         src: 'images/whisper_running.png',
         alt: 'whisper.ai workflow'
     },
-
     {
-        src: 'whisper_transcribe_complete.png',
+        src: 'images/whisper_transcribe_complete.png',
         alt: 'whisper workflow complete.'
     }
 ];
-// Select the image container and the hover instruction
-const imageContainer = document.querySelector('.image-container');
-const hoverInstruction = document.querySelector('.hover-instruction');
 
-// Function to load the image
-function loadImage() {
-    // Create a new image element
+// Preload images when the page loads
+const images = [];
+imageObjects.forEach((imgObj) => {
     const img = new Image();
-    img.src = imageObject.src; // Set the image source
-    img.alt = imageObject.alt; // Set the image alt text
+    img.src = imgObj.src;
+    images.push(img);
+});
 
-    // Append the image to the image container
-    imageContainer.innerHTML = ''; // Clear previous content
-    imageContainer.appendChild(img);
+// Select all image containers
+const imageContainers = document.querySelectorAll('.image-container');
 
-    // Hide the hover instruction by adding a CSS class
-    hoverInstruction.classList.add('hidden');
-}
+// Function to display the image and show instruction on hover
+function displayImage(container, imgObj) {
+    // Find the corresponding image object index
+    const index = imageObjects.findIndex(obj => obj.src === imgObj.src);
 
-// Function to unload the image
-function unloadImage() {
-    // Clear the image container
-    imageContainer.innerHTML = '';
+    // Set the background image of the container
+    container.style.backgroundImage = `url(${images[index].src})`;
+    container.style.backgroundSize = 'cover';
+    container.style.backgroundPosition = 'center';
 
-    // Show the hover instruction by removing the CSS class
+    // Show the hover instruction
+    const hoverInstruction = container.nextElementSibling;
     hoverInstruction.classList.remove('hidden');
 }
 
-// Event listeners for hover
-imageContainer.addEventListener('mouseover', loadImage);
-imageContainer.addEventListener('mouseout', unloadImage);
+// Function to reset the container and hide instruction on mouseout
+function resetContainer(container) {
+    container.style.backgroundImage = 'none';
+
+    // Hide the hover instruction
+    const hoverInstruction = container.nextElementSibling;
+    hoverInstruction.classList.add('hidden');
+}
+
+// Add event listeners for hover on each image container
+imageContainers.forEach((container, index) => {
+    container.addEventListener('mouseover', function() {
+        displayImage(container, imageObjects[index]);
+    });
+
+    container.addEventListener('mouseout', function() {
+        resetContainer(container);
+    });
+});
+
+function displayImage(container, imgObj) {
+    // Find the corresponding image object index
+    const index = imageObjects.findIndex(obj => obj.src === imgObj.src);
+
+    // Set the background image of the container
+    container.style.backgroundImage = `url(${images[index].src})`;
+    container.style.backgroundSize = 'contain'; // Adjust to 'cover' if needed
+    container.style.backgroundPosition = 'center';
+    container.style.backgroundRepeat = 'no-repeat';
+
+    // Show the hover instruction
+    const hoverInstruction = container.nextElementSibling;
+    hoverInstruction.classList.remove('hidden');
+}

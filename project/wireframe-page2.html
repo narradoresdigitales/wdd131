@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wireframe - Project 2</title>
     <link rel="stylesheet" href="styles/wireframe-page2.css">
+    <script src="scripts/wireframe-page2.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
     <main>
         <div class="main-content">
             <div class="project-details">
-                <h2>Project Background</h2>
+                <h2>Project 2 Background</h2>
                 <p>Have you ever attempted to transcribe a video? There are tools such as oTranscribe that provides a user-friendly platform to perform transcription for media files, although the process remains slow and tedious. Perhaps you would like to provide captions for your own video and or you are very interested in video content that is delivered in a  language in which you do not possesses linguistic competencies.</p>
 
                 <h2>Real-World Problem</h2>
@@ -28,17 +29,42 @@
                 <h2>Solution</h2>
                 <p>Whisper.ai is your solution.The source language is detected by default, you have the option to indicate the original language as you enter the run command using Anaconda prompt to activate a local environment. If this is not enough, you can use this value to simultaneously perform a translation of the transcription.</p>
 
-                The first step to use Whisper is to active your Anaconda prompt.
-                
-                <p class="hover-instruction">Hover over to load image</p>
+                <p>The source language is detected by default, you have the option to indicate the original language as you enter the run command using Anaconda prompt to activate a local environment. If this is not enough, you can use this value to simultaneously perform a translation of the transcription.</p>
 
+                <p>The first step to use Whisper is to active your Anaconda prompt.</p>
+                
+                <p class="hover-instruction">Hover over to load image</p> 
                 <div class="center-content">
-                    
+                    <div class="image-container"></div><!--conda prompt-->
+                </div>
+
+                <p>Once your environment is active, change directories using the filepath to the folder where you saved the file for transcription and translation.</p>
+
+                <p>Now that your environment knows where to find your file, 1] type the whisper command, 2] file name.ext, 3] language option, and 4] language model</p>
+                            
+                <p class="hover-instruction">Hover over to load image</p>
+                <div class="center-content">
+                    <div class="image-container"></div><!--cd filepath-->
+                </div>
+
+                <p>Once your file has been located and opened, Whisper will proceed to perform the transcription and target translation if you have included a language for this parameter.</p>
+
+                <p class="hover-instruction">Hover over to load image</p>
+                <div class="center-content">
                     <div class="image-container"></div>
                 </div>
 
+                <p>Once the transcription (and translation if indicated) is complete,  you will see the complete file in your conda environment. Of course, the multiple text files will be created in the destination folder.</p>
+
+                <p class="hover-instruction">Hover over to load image</p>
+                <div class="center-content">
+                    <div class="image-container"></div>
+                </div>
+
+                
+
                 <h2>Project Conclusion</h2>
-                <p>Project 2 showcases the importance of modern web development practices in creating a user-friendly interface. By leveraging JavaScript and CSS techniques, the project successfully addresses the need for responsive and interactive web design.</p>
+                <p>Project 2 highlights the transformative impact of Whisper.ai in tackling the challenge of video transcription and translation. By leveraging Whisper.ai, the project simplifies the complex process of transcribing videos and providing multilingual captions. The integration of Whisper.ai not only automates the detection of source languages but also facilitates real-time translations, enhancing accessibility and usability. This innovative approach exemplifies the power of modern web technologies in optimizing workflow efficiency and enhancing user interaction with digital media.</p>
             </div>
         </div>
     </main>

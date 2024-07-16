@@ -125,13 +125,15 @@ footer {
 
 .image-container {
     width: 100%;
-    max-width: 600px; /* Set a max width for the image container */
-    height: 400px; /* Set a height for the placeholder */
-    background-color: #f0f0f0; /* Light gray background for the placeholder */
+    height: 400px; /* Set a fixed height for consistency */
+    background-color: #f0f0f0; /* Fallback color */
+    background-size: contain; /* Adjust image size to fit container */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center; /* Center the image within the container */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px; /* Space between the instruction and the image */
+    margin-top: 10px; /* Adjust margin-top as needed */
 }
 
 .hover-instruction {
