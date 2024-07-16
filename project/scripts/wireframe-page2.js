@@ -1,9 +1,25 @@
 // Define your image object
-const imageObject = {
-    src: 'images/project2_image.png', // Update with the path to your Project 2 image
-    alt: 'Responsive web design example.'
-};
+const imageObject = [ 
+    {
+        src: 'images/conda_activate.png', // Update with the path to your Project 2 image
+        alt: 'Activate your conda environment.'
+    },
 
+    {
+        src: 'images/cd_filepath.png',
+        alt: 'select working directory.'
+    }, 
+
+    {
+        src: 'images/whisper_running.png',
+        alt: 'whisper.ai workflow'
+    },
+
+    {
+        src: 'whisper_transcribe_complete.png',
+        alt: 'whisper workflow complete.'
+    }
+];
 // Select the image container and the hover instruction
 const imageContainer = document.querySelector('.image-container');
 const hoverInstruction = document.querySelector('.hover-instruction');
