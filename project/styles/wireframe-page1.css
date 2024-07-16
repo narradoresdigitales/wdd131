@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #CCCCCC;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: black; /* White text */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #008080; /* Light gray on hover */
+}
+
+
+/* Main */
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.main-content {
+    padding: 20px;
+}
+
+.project-details {
+    margin-top: 20px;
+    text-align: center; 
+
+}
+
+.project-details h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #008080; /* Teal color */
+}
+
+.project-details p {
+    line-height: 1.6;
+}
+
+.project-details a {
+    display: inline-block;
+    background-color: #008080;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project-details a:hover {
+    background-color: #006666; /* Darker teal on hover */
+}
+
+/* ------------           ----------------*/ 
+
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Adjust margin-top as needed */
+}
+
+
+.image-container {
+    width: 100%;
+    max-width: 600px; /* Set a max width for the image container */
+    height: 400px; /* Set a height for the placeholder */
+    background-color: #f0f0f0; /* Light gray background for the placeholder */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Space between the image and the instruction */
+}
+
+
+.hover-instruction {
+    color: #666; /* Medium gray text color */
+    background-color: #e0e0e0; /* Button-like background */
+    padding: 5px 10px; /* Padding for button-like appearance */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0; /* Remove default margin */
+    display: block;
+}
+
+.image-container:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    cursor: pointer; /* Change cursor to indicate clickable */
+}
+
+
