@@ -1,3 +1,37 @@
+// Function to generate a personalized greeting
+function generateGreeting(userName) {
+    if (userName) {
+        return `Hello, ${userName}! Please remember to contact me with any comments or questions. I look forward to hearing from you!.`;
+    } else {
+        return 'Hello! Welcome to my website.';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Example user (replace with actual user data or input)
+    let user = {
+        name: 'kind Visitor'
+    };
+
+    // Generate greeting message
+    let greetingMessage = generateGreeting(user.name);
+
+    // Display greeting message on the webpage
+    let greetingContainer = document.getElementById('greetingContainer');
+    greetingContainer.textContent = greetingMessage;
+});
+
+
+
+
+
+
+
+
+
+/// 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const burgerMenu = document.getElementById('burgerMenu');
     const navLinks = document.querySelector('.nav-links');
@@ -74,7 +108,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Visit Count // 
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Retrieve visit count from local storage
+    let visitCount = localStorage.getItem('visitCount');
+
+    // Initialize visit count if it doesn't exist in local storage
+    if (!visitCount) {
+        visitCount = 0;
+    } else {
+        visitCount = parseInt(visitCount); // Parse stored count as integer
+    }
+
+    // Update visit count in the span elements with class 'visit-count'
+    const visitCountElements = document.querySelectorAll('.visit-count');
+    visitCountElements.forEach(element => {
+        element.textContent = visitCount;
+    });
+
+    // Increment visit count and update local storage on page load
+    visitCount++;
+    localStorage.setItem('visitCount', visitCount.toString());
+});
 
 
 

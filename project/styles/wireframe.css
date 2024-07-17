@@ -320,3 +320,15 @@ footer p {
     text-decoration: none;
     cursor: pointer;
 }
+
+#greetingContainer {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #008080;;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px;
+}
