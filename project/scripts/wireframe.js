@@ -75,18 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Contact Me // 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const contactForm = document.getElementById('contactForm');
 
-    contactForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // Perform any form validation or data processing here
-
-        // Redirect to the confirmation page
-        window.location.href = 'confirmation.html';
-    });
-});
 
