@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Perform any form validation or data processing here
 
             // Redirect to the confirmation page
-            window.location.href = 'confirmation.html';
+            window.location.href = 'wireframe-contact-me-confirmation.html';
         });
     } else {
         console.log('Form not found.');
