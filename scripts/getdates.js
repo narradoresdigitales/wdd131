@@ -9,3 +9,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById("lastModified").textContent = `Last modified: ${lastModified}`;
 });
 
+// Add the year and last modified date
